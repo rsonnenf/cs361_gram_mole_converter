@@ -31,7 +31,7 @@ def request_conversion(conversion_type, mass_value, mass_unit, molar_mass):
     socket.send_json(request)
 ```
 
-The arguments of the function call includethe following:
+The arguments of the function call include the following:
 
 * `conversion_type` - the type of conversion to be made, i.e., "grams_to_moles" or "moles_to_grams". 
 * `mass_value` - the number (and only the number) representing the mass to be converted of the substance
