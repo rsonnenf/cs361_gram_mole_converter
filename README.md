@@ -83,7 +83,7 @@ def request_conversion(conversion_type, mass_value, mass_unit, molar_mass):
     return response
 ```
 
-Example calls to the microservice include:
+### Example calls to the microservice include:
 
 ```
 request_conversion('grams_to_moles', 1, 'g', 18.015)  
@@ -92,3 +92,7 @@ request_conversion('moles_to_grams', 0.555, 'moles', 18.015)
 
 request_conversion('grams_to_moles', 1, 'k', 18.015)
 ```
+
+### UML Sequence Diagram
+![image](https://github.com/rsonnenf/cs361_gram_mole_converter/assets/113133486/58c625cf-71bb-4cef-82ac-d3f741606d32)
+
