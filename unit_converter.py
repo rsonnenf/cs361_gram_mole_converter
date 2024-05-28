@@ -33,13 +33,13 @@ def unit_converter():
 
     context = zmq.Context()
     socket = context.socket(zmq.REP)  # Socket for sending responses
-    socket.bind("tcp://*:5555")  # Bind to port 5555
+    socket.bind("tcp://*:5555")
 
     while True:
         # Wait for next request from client
         request = socket.recv_json()
 
-        # client sends conversion, mass, unit, molar_mass in json
+        # client sends the following parameters in json
         conversion = request["conversion"]
         mass_value = request["mass"]
         unit = request["unit"]
